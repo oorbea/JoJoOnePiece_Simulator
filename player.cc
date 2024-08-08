@@ -4,11 +4,19 @@ using namespace std;
 typedef vector<pair<string, string>> hakiList;
 
 //Constructor
+Player::Player() {
+    this->name = "";
+}
+
 Player::Player(string& name) {
     this->name = name;
 }
 
 //Modifiers
+void Player::setName(string& name) {
+    this->name = name;
+}
+
 void Player::setFruit(Fruit& fruit) {
     this->devilFruit = fruit;
 }
@@ -30,6 +38,10 @@ void Player::setSpin(string& spin) {
 }
 
 //Consultors
+string Player::getName() {
+    return this->name;
+}
+
 Fruit Player::getFruit() {
     return this->devilFruit;
 }

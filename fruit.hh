@@ -10,25 +10,25 @@ public:
     Fruit();
 
     //Modifiers
-    void setName(string& name);
+    void setName(std::string& name);
 
-    void setDescription(string& description);
+    void setDescription(std::string& description);
 
-    void setType(string& type);
+    void setType(std::string& type);
 
     //Consultors
-    string getName();
+    std::string getName();
 
-    string getDescription();
+    std::string getDescription();
 
-    string getType();
+    std::string getType();
 
     bool exists();
 
 private:
-    string name;
-    string description;
-    string type;
+    std::string name;
+    std::string description;
+    std::string type;
 };
 
 #endif

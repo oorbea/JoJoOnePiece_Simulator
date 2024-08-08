@@ -1,20 +1,22 @@
 #include <iostream>
-#include <vector>
+#include "player.hh"
 
 using namespace std;
 
 int main() {
-    int number_of_players;
-    cout<<"Welcome to JoJo's&OnePiece Simulator"<<endl;
-    cout<<"En este simulador se os asignaran diversas cualidades y habilidades de los respectivos universos de One Piece y JoJo's Bizarre Adventure, con el objetivo de que discutais y decidais, basado en las condiciones de vuestros personajes, que tan lejos llegaríais en el mundo de One Piece."<<endl;
+    int numPlayers;
+    cout<<"Welcome to JoJo's & OnePiece Simulator"<<endl;
+    cout<<"En este simulador se os asignaran diversas cualidades y habilidades de los respectivos universos de One Piece y JoJo's Bizarre Adventure, con el objetivo de que discutais y decidais, basado en las condiciones de vuestros personajes, que tan lejos llegariais en el mundo de One Piece."<<endl;
     cout<<"Introdueix el nombre de jugadors: ";
-    cin>>number_of_players;
+    cin>>numPlayers;
     cout<<endl;
-    vector<string> player_name(number_of_players);
+    vector<Player> playersInRoom(numPlayers);
     cout<<"Introduiex el nom dels jugadors: "<<endl;
-    for(int i=0; i<player_name.size(); i++){
-        cout<<"Player "<<i<<": ";
-        cin>>player_name[i];
+    for(int i=0; i<numPlayers; i++){
+        cout<<"Player "<<i + 1<<": ";
+        string name;
+        cin>>name;
+        playersInRoom[i].setName(name);
     }
 
 }

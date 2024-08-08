@@ -5,45 +5,51 @@
 #include "stand.hh"
 #include <vector>
 
-typedef vector<pair<string, string>> hakiList;
+typedef std::vector<std::pair<std::string, std::string>> hakiList;
 class Player
 {
 public:
     //Constructor
-    Player(string& name);
+    Player();
+
+    Player(std::string& name);
 
     //Modifiers
+    void setName(std::string& name);
+
     void setFruit(Fruit& fruit);
 
     void setStand(Stand& stand);
 
-    void setStrength(string& strength);
+    void setStrength(std::string& strength);
 
     void setHaki(hakiList& haki);
 
-    void setSpin(string& spin);
+    void setSpin(std::string& spin);
 
     //Consultors
+    std::string getName();
+
     Fruit getFruit();
 
-    string getFruitMastery();
+    std::string getFruitMastery();
 
     Stand getStand();
 
-    string getStrength();
+    std::string getStrength();
 
     hakiList getHaki();
 
-    string getSpin();
+    std::string getSpin();
 
 private:
-    string name;
+    std::string name;
     Fruit devilFruit;
-    string fruitMastery;
+    std::string fruitMastery;
     Stand standPossessed;
-    string baseStrength;
+    std::string baseStrength;
     hakiList haki;
-    string spinMastery;
+    std::string spinMastery;
 };
 
 #endif

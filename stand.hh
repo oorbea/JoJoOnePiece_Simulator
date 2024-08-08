@@ -10,24 +10,24 @@ public:
     Stand();
 
     //Modifiers
-    void setName(string& name);
+    void setName(std::string& name);
 
-    void setDescription(string& description);
+    void setDescription(std::string& description);
 
     void setPhase(int phase);
 
     //Consultors
-    string getName();
+    std::string getName();
 
-    string getDescription();
+    std::string getDescription();
 
     int getPhase();
 
     bool exists();
 
 private:
-    string name;
-    string description;
+    std::string name;
+    std::string description;
     int phase = 1;
 };
 
