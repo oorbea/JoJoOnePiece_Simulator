@@ -6,33 +6,39 @@ Fruit::Fruit() {
     name = "";
 }
 
+Fruit::Fruit(const string& name, const string& description, const string& type) {
+    this->name = name;
+    this->description = description;
+    this->type = type;
+}
+
 //Modifiers
-void Fruit::setName(string& name) {
+void Fruit::setName(const string& name) {
     this->name = name;
 }
 
-void Fruit::setDescription(string& description) {
+void Fruit::setDescription(const string& description) {
     this->description = description;
 }
 
-void Fruit::setType(string& type) {
+void Fruit::setType(const string& type) {
     this->type = type;
 }
 
 //Consultors
 
-string Fruit::getName() {
+string Fruit::getName() const {
     return this->name;
 }
 
-string Fruit::getDescription() {
+string Fruit::getDescription() const {
     return this->description;
 }
 
-string Fruit::getType() {
+string Fruit::getType() const {
     return this->type;
 }
 
-bool Fruit::exists() {
+bool Fruit::exists() const {
     return name.length() > 0;
 }

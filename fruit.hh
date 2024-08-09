@@ -2,6 +2,7 @@
 #define FRUIT_HH_
 
 #include <string>
+using namespace std;
 
 class Fruit
 {
@@ -9,26 +10,28 @@ public:
     //Constructor
     Fruit();
 
+    Fruit(const string& name, const string& description, const string& type);
+
     //Modifiers
-    void setName(std::string& name);
+    void setName(const string& name);
 
-    void setDescription(std::string& description);
+    void setDescription(const string& description);
 
-    void setType(std::string& type);
+    void setType(const string& type);
 
     //Consultors
-    std::string getName();
+    string getName() const;
 
-    std::string getDescription();
+    string getDescription() const;
 
-    std::string getType();
+    string getType() const;
 
-    bool exists();
+    bool exists() const;
 
 private:
-    std::string name;
-    std::string description;
-    std::string type;
+    string name;
+    string description;
+    string type;
 };
 
 #endif

@@ -20,5 +20,7 @@ int main() {
         playersInRoom[i].setName(name);
     }
     cout << "Muy bien, asignemos poderes a los jugadores" << endl;
-
+    for (int i = 0; i < numPlayers; ++i) {
+        cout << "Le toca a " << playersInRoom[i].getName() << endl;
+    }
 }
