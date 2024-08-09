@@ -1,4 +1,5 @@
 #include <random>
+#include "randomizer.hh"
 using namespace std;
 
 int generateRandomNumber(int min, int max) {
