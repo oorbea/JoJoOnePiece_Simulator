@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main() { //TODO Poner pantallas de carga donde toque
     int numPlayers;
     cout<<"Welcome to JoJo's & OnePiece Simulator"<<endl;
     cout<<"En este simulador se os asignaran diversas cualidades y habilidades de los respectivos universos de One Piece y JoJo's Bizarre Adventure, con el objetivo de que discutais y decidais, basado en las condiciones de vuestros personajes, que tan lejos llegariais en el mundo de One Piece."<<endl;
