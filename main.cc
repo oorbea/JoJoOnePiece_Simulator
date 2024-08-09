@@ -19,9 +19,5 @@ int main() {
         cin>>name;
         playersInRoom[i].setName(name);
     }
-    cout << "Generar numero aleatorio entre dos numeros:" << endl;
-    int minNum, maxNum;
-    cin >> minNum >> maxNum;
-    cout << generateRandomNumber(minNum, maxNum) << endl;
 
 }
