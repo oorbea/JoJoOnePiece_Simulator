@@ -12,6 +12,8 @@ Stand generateStand();
 
 string generateStrength();
 
+hakiList generateHakiMastery(hakiList& hList);
+
 hakiList generateHaki();
 
 string generateSpin();

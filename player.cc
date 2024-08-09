@@ -21,6 +21,10 @@ void Player::setFruit(const Fruit& fruit) {
     this->devilFruit = fruit;
 }
 
+void Player::setFruitMastery(const string& fruitMastery) {
+    this->fruitMastery = fruitMastery;
+}
+
 void Player::setStand(const Stand& stand) {
     this->standPossessed = stand;
 }

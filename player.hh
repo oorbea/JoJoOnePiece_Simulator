@@ -20,6 +20,8 @@ public:
 
     void setFruit(const Fruit& fruit);
 
+    void setFruitMastery(const string& fruitMastery);
+
     void setStand(const Stand& stand);
 
     void setStrength(const string& strength);

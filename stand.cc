@@ -6,7 +6,7 @@ Stand::Stand() {
     this->name = "";
 }
 
-Stand::Stand(const string& name, const string& description, const int phase = 1) {
+Stand::Stand(const string& name, const string& description, const int phase) {
     this->name = name;
     this->description = description;
     this->phase = phase;
