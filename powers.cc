@@ -18,7 +18,7 @@ const vector<Fruit> fruitArray = {
     Fruit("Ito Ito", "Generar hilos con los que puede cortar a su objetivo o manejar a las personas como si fueran marionetas.", "Paramecia"),
     Fruit("Noro Noro", "Lanzar rayo especial que vuelve muy lento a su objetivo por treinta segundos.", "Paramecia"),
     Fruit("Doa Doa", "Se convierte en un hombre-puerta, con lo cual puede crear puertas en cualquier lugar, incluso en el propio aire, o en una persona.", "Paramecia"),
-    Fruit("Awa Awa", "Crear jabón a través de su cuerpo y manipularlo, además puede "lavar" la fuerza de una persona.", "Paramecia"),
+    Fruit("Awa Awa", "Crear jabón a través de su cuerpo y manipularlo, además puede lavar la fuerza de una persona.", "Paramecia"),
     Fruit("Beri Beri", "Separar cualquier parte de su cuerpo en esferas.", "Paramecia"),
     Fruit("Sabi Sabi", "Oxidar instantáneamente cualquier cosa.", "Paramecia"),
     Fruit("Shari Shari", "Crear ruedas que usa como arma en cualquier parte de su cuerpo.", "Paramecia"),
