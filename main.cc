@@ -1,11 +1,9 @@
-#include <locale>
 #include "powers.hh"
 #include "loadingScreen.hh"
 
 using namespace std;
 
-int main() { //TODO Poner pantallas de carga donde toque
-    setlocale(LC_ALL, "");
+int main() {
 
     int numPlayers;
     cout << "Welcome to JoJo's & OnePiece Simulator" << endl;
@@ -103,4 +101,5 @@ int main() { //TODO Poner pantallas de carga donde toque
 
         cout << endl;
     }
+
 }
