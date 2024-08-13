@@ -1,6 +1,6 @@
-#include <iostream>
 #include "player.hh"
 #include "randomizer.hh"
+#include "loadingScreen.hh"
 
 using namespace std;
 
