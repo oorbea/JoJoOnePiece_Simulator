@@ -19,3 +19,13 @@ g++ -o program.exe *.o
 
 :: Mensaje de finalización
 echo ¡Compilado con éxito!
+echo Ejecutando el juego...
+
+:: Tiempo de espera
+timeout /t 3 /nobreak >nul
+
+:: Borrar pantalla de la terminal
+cls
+
+:: Ejecutar el juego
+program.exe
