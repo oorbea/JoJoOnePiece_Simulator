@@ -40,5 +40,5 @@ string Fruit::getType() const {
 }
 
 bool Fruit::exists() const {
-    return name.length() > 0;
+    return name != "Sin fruta";
 }

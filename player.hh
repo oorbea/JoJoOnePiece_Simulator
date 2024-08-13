@@ -48,7 +48,7 @@ public:
 private:
     string name;
     Fruit devilFruit;
-    string fruitMastery;
+    string fruitMastery = "";
     Stand standPossessed;
     string baseStrength;
     hakiList haki;
