@@ -1,6 +1,6 @@
-#include <iostream>
 #include <locale>
 #include "powers.hh"
+#include "loadingScreen.hh"
 
 using namespace std;
 
