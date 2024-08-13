@@ -4,52 +4,55 @@
 #include "fruit.hh"
 #include "stand.hh"
 #include <vector>
+using namespace std;
 
-typedef std::vector<std::pair<std::string, std::string>> hakiList;
+typedef vector<pair<string, string>> hakiList;
 class Player
 {
 public:
     //Constructor
     Player();
 
-    Player(std::string& name);
+    Player(const string& name);
 
     //Modifiers
-    void setName(std::string& name);
+    void setName(const string& name);
 
-    void setFruit(Fruit& fruit);
+    void setFruit(const Fruit& fruit);
 
-    void setStand(Stand& stand);
+    void setFruitMastery(const string& fruitMastery);
 
-    void setStrength(std::string& strength);
+    void setStand(const Stand& stand);
 
-    void setHaki(hakiList& haki);
+    void setStrength(const string& strength);
 
-    void setSpin(std::string& spin);
+    void setHaki(const hakiList& haki);
+
+    void setSpin(const string& spin);
 
     //Consultors
-    std::string getName();
+    string getName() const;
 
-    Fruit getFruit();
+    Fruit getFruit() const;
 
-    std::string getFruitMastery();
+    string getFruitMastery() const;
 
-    Stand getStand();
+    Stand getStand() const;
 
-    std::string getStrength();
+    string getStrength() const;
 
-    hakiList getHaki();
+    hakiList getHaki() const;
 
-    std::string getSpin();
+    string getSpin() const;
 
 private:
-    std::string name;
+    string name;
     Fruit devilFruit;
-    std::string fruitMastery;
+    string fruitMastery = "";
     Stand standPossessed;
-    std::string baseStrength;
+    string baseStrength;
     hakiList haki;
-    std::string spinMastery;
+    string spinMastery;
 };
 
 #endif

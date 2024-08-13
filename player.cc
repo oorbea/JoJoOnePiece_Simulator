@@ -8,60 +8,64 @@ Player::Player() {
     this->name = "";
 }
 
-Player::Player(string& name) {
+Player::Player(const string& name) {
     this->name = name;
 }
 
 //Modifiers
-void Player::setName(string& name) {
+void Player::setName(const string& name) {
     this->name = name;
 }
 
-void Player::setFruit(Fruit& fruit) {
+void Player::setFruit(const Fruit& fruit) {
     this->devilFruit = fruit;
 }
 
-void Player::setStand(Stand& stand) {
+void Player::setFruitMastery(const string& fruitMastery) {
+    this->fruitMastery = fruitMastery;
+}
+
+void Player::setStand(const Stand& stand) {
     this->standPossessed = stand;
 }
 
-void Player::setStrength(string& strength) {
+void Player::setStrength(const string& strength) {
     this->baseStrength = strength;
 }
 
-void Player::setHaki(hakiList& haki) {
+void Player::setHaki(const hakiList& haki) {
     this->haki = haki;
 }
 
-void Player::setSpin(string& spin) {
+void Player::setSpin(const string& spin) {
     this->spinMastery = spin;
 }
 
 //Consultors
-string Player::getName() {
+string Player::getName() const {
     return this->name;
 }
 
-Fruit Player::getFruit() {
+Fruit Player::getFruit() const {
     return this->devilFruit;
 }
 
-string Player::getFruitMastery() {
+string Player::getFruitMastery() const {
     return this->fruitMastery;
 }
 
-Stand Player::getStand() {
+Stand Player::getStand() const {
     return this->standPossessed;
 }
 
-string Player::getStrength() {
+string Player::getStrength() const {
     return this->baseStrength;
 }
 
-hakiList Player::getHaki() {
+hakiList Player::getHaki() const {
     return this->haki;
 }
 
-string Player::getSpin() {
+string Player::getSpin() const {
     return this->spinMastery;
 }

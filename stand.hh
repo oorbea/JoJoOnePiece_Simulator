@@ -2,6 +2,7 @@
 #define STAND_HH_
 
 #include <string>
+using namespace std;
 
 class Stand
 {
@@ -9,25 +10,27 @@ public:
     //Constructor
     Stand();
 
+    Stand(const string& name, const string& description, const int phase = 1);
+
     //Modifiers
-    void setName(std::string& name);
+    void setName(const string& name);
 
-    void setDescription(std::string& description);
+    void setDescription(const string& description);
 
-    void setPhase(int phase);
+    void setPhase(const int phase);
 
     //Consultors
-    std::string getName();
+    string getName() const;
 
-    std::string getDescription();
+    string getDescription() const;
 
-    int getPhase();
+    int getPhase() const;
 
-    bool exists();
+    bool exists() const;
 
 private:
-    std::string name;
-    std::string description;
+    string name;
+    string description;
     int phase = 1;
 };
 
