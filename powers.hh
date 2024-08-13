@@ -1,5 +1,6 @@
 #ifndef POWERS_HH_
 #define POWERS_HH_
+
 #include "player.hh"
 #include "randomizer.hh"
 using namespace std;
