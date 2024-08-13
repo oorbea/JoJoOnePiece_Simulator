@@ -2,8 +2,8 @@
 chcp 65001
 
 :: Eliminar archivos objeto y ejecutables existentes
-del /q *.o
-del /q *.exe
+del /q *.o 2>nul
+del /q *.exe 2>nul
 
 :: Compilar archivos objeto
 g++ -c loadingScreen.cc
