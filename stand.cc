@@ -3,7 +3,7 @@ using namespace std;
 
 //Constructor
 Stand::Stand() {
-    this->name = "";
+    name = "";
 }
 
 Stand::Stand(const string& name, const string& description, const int phase) {
@@ -27,17 +27,17 @@ void Stand::setPhase(const int phase) {
 
 //Consultors
 string Stand::getName() const {
-    return this->name;
+    return name;
 }
 
 string Stand::getDescription() const {
-    return this->description;
+    return description;
 }
 
 int Stand::getPhase() const {
-    return this->phase;
+    return phase;
 }
 
 bool Stand::exists() const {
-    return this->name.length() > 0;
+    return name != "Sin stand";
 }
