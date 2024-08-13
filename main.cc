@@ -26,14 +26,14 @@ int main() {
         cout << "Le toca a " << playerName << endl << endl;
 
         cout << "Primero veamos tu fisico base" << endl;
-        loadingScreen(5);
+        loadingScreen(generateRandomNumber(2, 5));
         string strength = generateStrength();
         player->setStrength(strength);
         cout << playerName << ", eres tan fuerte como un " << strength << endl << endl;
         delay(2.5);
 
         cout << "Ahora veamos si sabes usar el spin" << endl;
-        loadingScreen(5);
+        loadingScreen(generateRandomNumber(2, 5));
         string spin = generateSpin();
         player->setSpin(spin);
         if (spin == "Sin spin")
@@ -43,7 +43,7 @@ int main() {
         delay(2.5);
 
         cout << "Vamos, a ver que tal tu fruta del diablo" << endl;
-        loadingScreen(5);
+        loadingScreen(generateRandomNumber(2, 5));
         Fruit akuma = generateFruit();
         player->setFruit(akuma);
         if (akuma.exists()) {
@@ -51,7 +51,7 @@ int main() {
             delay(5);
 
             cout << "Y tu maestria con ella es..." << endl;
-            loadingScreen(5);
+            loadingScreen(generateRandomNumber(2, 5));
             string fruitMas = generateFruitMastery();
             player->setFruitMastery(fruitMas);
             cout << "Maestria con tu fruta: " << fruitMas << endl << endl;
@@ -61,7 +61,7 @@ int main() {
         delay(2.5);
 
         cout << "¡Algo te esta pasando! Creo que vas a obtener un stand" << endl;
-        loadingScreen(5);
+        loadingScreen(generateRandomNumber(2, 5));
         Stand stand = generateStand();
         player->setStand(stand);
         if (stand.exists()) {
@@ -75,7 +75,7 @@ int main() {
         }
 
         cout << "A ver que tal los resultados de tu entrenamiento. ¿Que haki tendras?" << endl;
-        loadingScreen(5);
+        loadingScreen(generateRandomNumber(2, 5));
         hakiList haList = generateHaki();
         if (haList[0].first != "Sin haki") {
             cout << "Pues resulta que tienes estos tipos de haki: ";
@@ -87,7 +87,7 @@ int main() {
             cout << endl << endl;
             
             cout << "Y tu maestria con cada uno de ellos es: " << endl;
-            loadingScreen(5);
+            loadingScreen(generateRandomNumber(2, 5));
             haList = generateHakiMastery(haList);
             for (int j = 0; j < haList.size(); ++j) {
                 if (j == haList.size() - 1) cout << haList[j].first << ": " << haList[j].second;
