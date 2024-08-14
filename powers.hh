@@ -14,6 +14,8 @@ string generateFruitMastery();
 
 Stand generateStand();
 
+Stand generateStandEvolution(const string& standName);
+
 string generateStrength();
 
 hakiList generateHakiMastery(hakiList& hList);

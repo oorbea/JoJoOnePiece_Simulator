@@ -8,6 +8,7 @@ int main() {
     int numPlayers;
     cout << "Welcome to JoJo's & OnePiece Simulator" << endl;
     cout << "En este simulador se os asignarán diversas cualidades y habilidades de los respectivos universos de One Piece y JoJo's Bizarre Adventure, con el objetivo de que discutáis y decidáis, basado en las condiciones de vuestros personajes, cuán lejos llegaríais en el mundo de One Piece." << endl;
+
     cout << "Introduce el número de jugadores: ";
     cin >> numPlayers;
     cout << endl;
@@ -19,7 +20,11 @@ int main() {
         cin >> name;
         playersInRoom[i].setName(name);
     }
+
     cout << endl << "Muy bien, asignemos poderes a los jugadores" << endl << endl;
+
+    stablishEvolutions();
+
     for (int i = 0; i < numPlayers; ++i) {
         auto player = &playersInRoom[i];
         string playerName = player->getName();
@@ -63,16 +68,24 @@ int main() {
         cout << "¡Algo te está pasando! ¡Creo que vas a obtener un stand!" << endl;
         loadingScreen(generateRandomNumber(1, 2));
         Stand stand = generateStand();
-        player->setStand(stand);
         if (stand.exists()) {
-            cout << playerName << ", tu stand es " << stand.getName() << endl;
+            string standName = stand.getName();
+            cout << playerName << ", tu stand es " << standName << endl;
+            if (stand.canEvolve()) {
+                delay(2);
+                cout << "Ahora veamos en qué fase está tu stand" << endl;
+                loadingScreen(generateRandomNumber(1, 2));
+                stand = generateStandEvolution(standName);
+                cout << playerName << ", tu stand es " << stand.getName() << endl;
+            }
             cout << stand.getDescription() << endl << endl;
-            delay(5);
+            delay(10);
         }
         else {
             cout << playerName << ", lo siento, pero desafortunadamente no eres usuario de stand." << endl << endl;
             delay(2.5);
         }
+        player->setStand(stand);
 
         cout << "A ver qué tal los resultados de tu entrenamiento. ¿Qué haki tendrás?" << endl;
         loadingScreen(generateRandomNumber(1, 2));

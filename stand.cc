@@ -21,10 +21,6 @@ void Stand::setDescription(const string& description) {
     this->description = description;
 }
 
-void Stand::setPhase(const int phase) {
-    this->phase = phase;
-}
-
 //Consultors
 string Stand::getName() const {
     return name;
@@ -32,10 +28,6 @@ string Stand::getName() const {
 
 string Stand::getDescription() const {
     return description;
-}
-
-int Stand::getPhase() const {
-    return phase;
 }
 
 bool Stand::canEvolve() const {

@@ -245,6 +245,12 @@ Stand generateStand() {
     return standArray[standIndex];
 }
 
+Stand generateStandEvolution(const string& standName) {
+    auto evolutions = evolutionMap[standName];
+    int standIndex = generateRandomNumber(0, evolutions.size() - 1);
+    return evolutions[standIndex];
+}
+
 string generateStrength() {
     int strengthLvl = generateRandomNumber(1, 6);
     switch (strengthLvl)
