@@ -242,9 +242,10 @@ Stand generateStand() {
     return standArray[standIndex];
 }
 
-Stand generateStandEvolution(const string& standName) {
+Stand generateStandEvolution(const string& standName, const string& spinLvl) {
     auto evolutions = evolutionMap[standName];
     int standIndex = generateRandomNumber(0, evolutions.size() - 1);
+
     return evolutions[standIndex];
 }
 
@@ -340,6 +341,10 @@ string generateSpin() {
     int probab = generateRandomNumber(1, 100);
     if (probab <= 15) return "Sin spin"; //15%
     if (probab <= 40) return "Spin infinito"; //25%
-    if (probab <= 70) return "Spin basico"; //30%
-    else return "Spin aureo"; //30%
+    if (probab <= 70) return "Spin básico"; //30%
+    else return "Spin áureo"; //30%
+}
+
+Stand getSpecificEvolution(const string standName, const int index) {
+    return evolutionMap[standName][index];
 }
