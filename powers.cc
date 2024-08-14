@@ -160,15 +160,12 @@ const vector<Stand> standArray = {
 
     //Parte 7
     Stand("Tusk", "", true),
-    Stand("", ""),
-    Stand("", ""),
-    Stand("", ""),
-    Stand("", ""),
+
 };
 
 map<string, vector<Stand>> evolutionMap;
 
-void stablishEvolutions() { //TODO
+void stablishEvolutions() {
     evolutionMap["Star Platinum"] = {
         Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial."),
         Stand("Star Platinum: The World", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de Jotaro de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.")
