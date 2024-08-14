@@ -3,7 +3,10 @@
 
 #include "player.hh"
 #include "randomizer.hh"
+#include <map>
 using namespace std;
+
+void stablishEvolutions();
 
 Fruit generateFruit();
 

@@ -123,15 +123,99 @@ const vector<Fruit> fruitArray = {
     Fruit("Magu Magu", "Elemento del magma.", "Logia"),
     Fruit("Numa Numa", "Elemento del pantano.", "Logia"),
     Fruit("Gasu Gasu", "Elemento del gas.", "Logia"),
-    Fruit("Yuki Yuki", "Elemento de la nieve.", "Logia"),
-
+    Fruit("Yuki Yuki", "Elemento de la nieve.", "Logia")
 
 };
 
 const vector<Stand> standArray = {
-    Stand("Sin stand", "Desafortunadamente no tienes stand", 0),
-    Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de Jotaro de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate."),
+    
+    Stand("Sin stand", "Desafortunadamente no tienes stand"),
+
+    //Parte 3
+    Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de Jotaro de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.", true),
+
+    //Parte 6
+    Stand("Stone Free", "A corta distancia y cuando está ensamblado, Stone Free tiene buena fuerza física pudiendo doblar una moneda, pero no es lo suficientemente fuerte como para doblar y romper los barrotes de una celda además de poder desviar las balas cuando sean disparadas en su contra gracias a su velocidad que es equivalente a la de un meteorito extremadamente pequeño y veloz. Además de esta cualidad, Stone Free también cuenta con habilidades integradas al cuerpo de Jolyne, permitiéndole deshacer su cuerpo en la forma de una cuerda extremadamente fina la cual ella puede usar de distintas maneras según la situación."),
+    Stand("Kiss", "Kiss puede crear pegatinas cuadradas con símbolos de labios en ellas. Si una pegatina es colocada en un objeto, se creará una copia exacta de este. La pegatina permanecerá pegada ya sea en el objeto original o en la copia. El efecto incluye partes del cuerpo, de forma que si se coloca una pegatina en un brazo, se creará una copia como si fuera una extremidad adicional en el cuerpo del afectado. Ermes también puede colocarse pegatinas sobre sí misma."),
+    Stand("Burning Down the House", "Burning Down the House no tiene ninguna manifestación física aparte de una habitación de aspecto normal con un piano, algunos libros, y una gran cantidad de espacio. No tiene personalidad ni puede atacar; sólo sirve como escondite de Emporio."),
+    Stand("Foo Fighters", "Permite que los manojos de plancton existan en una forma humanoide. Adopta una personalidad propia. Puede recorrer cuerpos de agua con súper velocidad, producir cuerpos secundarios, desparar extensiones de sí misma, controlar el agua de forma limitada, controlar cuerpos de personas y también puede curar a la gente usando su plancton para coser microscópicamente las heridas rápidamente. Algunas de las heridas más mortales pueden curarse en cuestión de segundos."),
+    Stand("Weather Report", "Weather Report es un stand versátil que posee un control casi completo sobre el clima a escala global. Teniendo control sobre los fenómenos meteorológicos, las habilidades de Weather Report también se extienden a la manipulación del agua, el viento, la electricidad, e incluso el frío, así como otros fenómenos elementales", true),
+    Stand("Diver Down", "Diver Down puede imprimir cualquier golpe en cualquier superficie y liberar la energía acumulada cuando lo desee. Además, la habilidad principal de Diver Down es sumergirse dentro de objetos sólidos y luego manipular la materia que los compone. Con esta habilidad, Diver Down puede atacar a un enemigo o un objetivo desde su interior, por ejemplo, reorganizando sus huesos y tendones, o defender a un aliado ocultándose dentro de ellos y recibiendo el ataque en su lugar."),
+    Stand("Whitesnake", "La habilidad principal de Whitesnake es transformar una parte o la totalidad de la psique de una persona o su [Stand] (espíritu) en Discos humanamente tangibles. Para ello, Whitesnake debe tocar a su víctima y físicamente extraer el disco de ellos. Estos discos se pueden insertar en otras personas, lo que les permite leer las memorias o utilizar Stands almacenados en el disco. Los discos son permanentes, existentes incluso mucho tiempo después de que Whitesnake deja de existir; la única manera de destruirlos es insertarlos en una persona moribunda, en cuyo caso el disco desaparece.", true),
+    Stand("Goo Goo Dolls", "Goo Goo Dolls tiene la habilidad de reducir el tamaño de cualquier persona dentro de su rango. La víctima se reducirá al tamaño de un ratón y el Stand lo atacará si las órdenes de su usuario son desobedecidas."),
+    Stand("Manhattan Transfer", "También llamado satélite asesino, Manhattan Transfer es un stand aproximadamente del tamaño de un pequeño pájaro que puede moverse libremente en el aire, es capaz de detectar y analizar el menor movimiento de aire. Si es atacado, intentará escapar del atacante. La habilidad principal de Manhattan Transfer es cambiar la dirección de las balas disparadas por su usuario, permitiendo que este alcance a sus objetivos sea cual sea su posición, haya obstáculos o dificultades en el viento."),
+    Stand("Highway To Hell", "Cuando su usuario intenta suicidarse, también puede hacer que alguien muera de la misma manera que él. No importan las circunstancias, cualquier daño que su usuario enfrente terminará ocurriendo a la otra persona de la misma manera. En otras palabras, su usuario debe matarse para matar a su oponente."),
+    Stand("Marilyn Manson", "Su habilidad se activa después de que su usuario hace una apuesta con alguien y gana (aunque él mismo puede engañar, la persona con la que apuesta no puede hacerlo), y cuando esa persona pierde, el Stand procede a tomar las ganancias registrando al perdedor, incluso llegando a tomar sus órganos para vender al mercado negro para pagar las deudas si no tiene suficiente dinero. La persona que perdió no puede resistirse o contraatacar mientras Marilyn Manson recolecta la deuda."),
+    Stand("Jumpin' Jack Flash", "Si su usuario escupe sobre alguien, la persona dejará de ser afectada por la gravedad, moviéndose como si estuviera en gravedad cero. Este efecto se extiende también a cualquier cosa que la víctima toque, sea un objeto u otra persona. El rango del efecto tiene un radio de aproximadamente 20 metros desde el lugar o el cuerpo afectado."),
+    Stand("Limp Bizkit", "Limp Bizkit permite que su usuario traiga a los muertos de vuelta a la vida como zombis invisibles. Estos se manifiestan como espíritus tangibles que salen de sus cuerpos corpóreos, presentando una enorme agresividad y atacando a cualquiera que se encuentre cerca. Además, estos zombis también poseen fuerza aumentada y la capacidad de caminar por las paredes"),
+    Stand("Survivor", "Survivor viaja a través de superficies húmedas y estimula a la gente para pelear hasta la muerte. Además, durante el combate, las personas son habilitadas por Survivor para ver los puntos fuertes y puntos débiles de los demás."),
+    Stand("Planet Waves", "Planet Waves atrae y asegura que los meteoritos del espacio exterior lleguen al cuerpo de su usuario, desintegrándose justo antes de entrar en contacto con él."),
+    Stand("Dragon's Dream", "Tiene una brújula que utiliza los principios del feng shui para apuntar hacia la dirección de ambas áreas de suerte y mala suerte. Dragon's Dream es capaz de aprovecharse de esto permaneciendo en áreas afortunadas para evitar ataques, y atacando en las áreas desafortunadas de la otra persona para infligir el mayor daño posible. Cuando se dirigen golpes mortales, la gente es capaz de colocar sus extremidades en la burbuja de Dragon's Dream, haciendo que la extremidad se separe de la persona, dispararse velozmente contra el adversario para infligir el golpe, y luego regresando al atacante sin recibir ningún daño."),
+    Stand("Yo-Yo Ma", "Yo-Yo Ma es capaz de producir una saliva peligrosamente ácida, teniendo múltiples maneras de atacar con ella. Además, este stand es semi-indestructible."),
+    Stand("Green, Green Grass of Home", "La habilidad de Green, Green Grass of Home le permite encoger el tamaño de cualquier persona u objeto circundante cuanto más cerca se encuentre de su usuario."),
+    Stand("Jall House Lock", "Jail House Lock tiene la Habilidad de hacer que las personas que toquen lo que esté custodiando el stand sean capaces de retener un límite de 3 elementos en su memoria a corto plazo. Si el objetivo de Jail House Lock aprende una cuarta cosa, olvidarán la primera cosa que aprendió. El objetivo puede aprender continuamente cosas nuevas a costa de olvidar el primer elemento. Sin embargo, los recuerdos a largo plazo alcanzados antes de la influencia de Jail House Lock permanecen."),
+    Stand("Bohemian Rhapsody", "Bohemian Rhapsody es capaz de traer personajes representados en imágenes a la realidad a través de medios que contienen imágenes de esos personajes. Personajes de dibujos animados, manga y anime, incluso obras de arte y dibujos se ven afectados."),
+    Stand("Sky High", "El único poder de Sky High es controlar y dirigir los misteriosos criptidos conocidos como rods, unos seres que se alimentan del calor corporal de las personas."),
+    Stand("Under World", "Under World es capaz de excavar recuerdos de eventos y personas de la tierra. Esto incluye accidentes de automóvil, tiroteos, accidentes de avión que golpeó el suelo, juegos de fútbol de la NFL, minerales e incluso individuos."),
+
+    //Parte 7
+    Stand("Tusk", "", true),
+    Stand("", ""),
+    Stand("", ""),
+    Stand("", ""),
+    Stand("", ""),
 };
+
+map<string, vector<Stand>> evolutionMap;
+
+void stablishEvolutions() { //TODO
+    evolutionMap["Star Platinum"] = {
+        Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial."),
+        Stand("Star Platinum: The World", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de Jotaro de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.")
+    };
+    evolutionMap["Silver Chariot"] = {
+        Stand("Silver Chariot", ""),
+        Stand("Chariot Requiem", "")
+    };
+    evolutionMap["Echoes"] = {
+        Stand("Huevo", ""),
+        Stand("Echoes ACTO 1", ""),
+        Stand("Echoes ACTO 2", ""),
+        Stand("Echoes ACTO 3", "")
+    };
+    evolutionMap["Killer Queen"] = {
+        Stand("Killer Queen", ""),
+        Stand("Killer Queen: Bites the Dust", "")
+    };
+    evolutionMap["Gold Experience"] = {
+        Stand("Gold Experience", ""),
+        Stand("Gold Experience Requiem", "")
+    };
+    evolutionMap["Weather Report"] = {
+        Stand("Weather Report", ""),
+        Stand("Heavy Weather", "")
+    };
+    evolutionMap["Whitesnake"] = {
+        Stand("Whitesnake", "La habilidad principal de Whitesnake es transformar una parte o la totalidad de la psique de una persona o su [Stand] (espíritu) en Discos humanamente tangibles. Para ello, Whitesnake debe tocar a su víctima y físicamente extraer el disco de ellos. Estos discos se pueden insertar en otras personas, lo que les permite leer las memorias o utilizar Stands almacenados en el disco. Los discos son permanentes, existentes incluso mucho tiempo después de que Whitesnake deja de existir; la única manera de destruirlos es insertarlos en una persona moribunda, en cuyo caso el disco desaparece."),
+        Stand("C-Moon", "C-Moon le otorga a su usuario una masa negativa proporcional a la de la Tierra, con un alcance efectivo de tres kilómetros. Por lo tanto, cualquier cuerpo no fijado dentro de su alcance es alejado por la fuerza gravitatoria inversa de Pucci, cayendo paralelamente al suelo. El efecto desaparece una vez el cuerpo salga del alcance de la habilidad. C-Moon también puede aumentar enormemente la fuerza gravitacional que actúa sobre un objeto al tocarlo, provocando que ese objeto sea girado de adentro hacia afuera. Si toca o golpea el mismo objeto o área, vuelve a revertir este cambio. Por su asociación con C-Moon, Pucci parece ser capaz de desafiar la gravedad y la órbita de cualquier enemigo o amenaza."),
+        Stand("Made In Heaven", "Permite a su usuario moverse a velocidad infinita tras acelerar por un breve periodo de tiempo. Además de poder acelerar el transcurso del tiempo hasta llegar al punto de reiniciar el universo.")
+    };
+    evolutionMap["Tusk"] = {
+        Stand("Tusk ACTO 1", ""),
+        Stand("Tusk ACTO 2", ""),
+        Stand("Tusk ACTO 3", ""),
+        Stand("Tusk ACTO 4", "")
+    };
+    evolutionMap["Dirty Deeds Done Dirt Cheap"] = {
+        Stand("Dirty Deeds Done Dirt Cheap", ""),
+        Stand("D4C: Love Train", "")
+    };
+    evolutionMap["Soft & Wet"] = {
+        Stand("Soft & Wet de Josefumi", ""),
+        Stand("Soft & Wet", ""),
+        Stand("Soft & Wet: Go Beyond!", "")
+    };
+}
 
 Fruit generateFruit() {
     int fruitIndex = generateRandomNumber(0, fruitArray.size() - 1);

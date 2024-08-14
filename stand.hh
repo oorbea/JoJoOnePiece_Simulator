@@ -10,7 +10,7 @@ public:
     //Constructor
     Stand();
 
-    Stand(const string& name, const string& description, const int phase = 1);
+    Stand(const string& name, const string& description, const bool evolves = false);
 
     //Modifiers
     void setName(const string& name);
@@ -26,12 +26,15 @@ public:
 
     int getPhase() const;
 
+    bool canEvolve() const;
+
     bool exists() const;
 
 private:
     string name;
     string description;
     int phase = 1;
+    bool evolves = false;
 };
 
 #endif
