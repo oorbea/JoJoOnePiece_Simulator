@@ -260,7 +260,7 @@ string generateStrength() {
         return "Gyojin fuerte";
 
     case 3:
-        return "Capitan de la marina";
+        return "Capitán de la marina";
 
     case 4:
         return "Vice Almirante";
@@ -272,7 +272,7 @@ string generateStrength() {
         return "Yonko+";
 
     default:
-        return "Soldado raso marina";
+        return "Soldado raso de la marina";
     }
 }
 

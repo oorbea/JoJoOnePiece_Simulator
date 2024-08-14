@@ -156,9 +156,20 @@ int main() {
         }
         else
             cout << playerName << ", lo siento, pero desafortunadamente no has aprendido a usar haki" << endl << endl;
+        
+        player->setHaki(haList);
         delay(2.5);
 
         cout << endl;
+    }
+
+    cout << "Vuestras estadísticas finales son las siguientes:" << endl << endl;
+    loadingScreen(3);
+
+    for (int i = 0; i < numPlayers; ++i) {
+        auto player = &playersInRoom[i];
+        player->printStats();
+        delay(0.5);
     }
 
 }

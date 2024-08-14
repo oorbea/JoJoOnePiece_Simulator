@@ -69,3 +69,20 @@ hakiList Player::getHaki() const {
 string Player::getSpin() const {
     return this->spinMastery;
 }
+
+void Player::printStats() const {
+    cout << name << endl << endl;
+    cout << "Físico base: " << baseStrength << endl;
+    cout << "Spin: " << spinMastery << endl;
+    cout << "Fruta del diablo: " << devilFruit.getName();
+    if (devilFruit.exists())
+        cout << " (Maestría " << fruitMastery << ")";
+    cout << endl;
+    cout << "Stand: " << standPossessed.getName() << endl;
+    cout << "Haki: ";
+    for (int i = 0; i < haki.size(); ++i) {
+        if (i == haki.size() - 1) cout << haki[i].first << " (Maestría " << haki[i].second << ")";
+        else cout << haki[i].first << " (Maestría " << haki[i].second << "), ";
+    }
+    cout << endl << endl;
+}

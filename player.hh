@@ -3,6 +3,7 @@
 
 #include "fruit.hh"
 #include "stand.hh"
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -44,6 +45,9 @@ public:
     hakiList getHaki() const;
 
     string getSpin() const;
+
+    //Print
+    void printStats() const;
 
 private:
     string name;
