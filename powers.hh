@@ -24,4 +24,6 @@ hakiList generateHaki();
 
 string generateSpin();
 
+Stand getSpecificEvolution(const string standName, const int index);
+
 #endif

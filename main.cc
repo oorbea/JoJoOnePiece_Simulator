@@ -76,7 +76,53 @@ int main() {
                 cout << "Ahora veamos en qué fase está tu stand" << endl;
                 loadingScreen(generateRandomNumber(1, 2));
                 stand = generateStandEvolution(standName);
-                cout << playerName << ", tu stand es " << stand.getName() << endl;
+                standName = stand.getName();
+                cout << playerName << ", tu stand es " << standName << endl;
+
+                if (standName == "Tusk ACTO 1" && spin != "Spin básico") {
+                    if (spin == "Sin spin") {
+                        spin = "Spin básico";
+                        cout << '¡' << playerName << ", al obtener a Tusk, has aprendido a usar spin básico!" << endl;
+                        player->setSpin(spin);
+                    }
+                    else {
+                        if (spin == "Spin áureo") {
+                            if (generateRandomNumber(0, 1) == 0) {
+                                stand = getSpecificEvolution("Tusk", 1);
+                                cout << '¡' << playerName << ", sin embargo, al tener spin áureo, Tusk evoluciona al ACTO 2!" << endl;
+                            }
+                            else {
+                                stand = getSpecificEvolution("Tusk", 2);
+                                cout << '¡' << playerName << ", sin embargo, al tener spin áureo, Tusk evoluciona al ACTO 3!" << endl;
+                            }
+                        }
+                        else {
+                            stand = getSpecificEvolution("Tusk", 3);
+                            cout << '¡' << playerName << ", sin embargo, al tener spin infinito, Tusk evoluciona al ACTO 4!" << endl;
+                        }
+                    }
+                }
+                else if ((standName == "Tusk ACTO 2" || standName == "Tusk ACTO 3") && spin != "Spin áureo") {
+                    if (spin == "Sin spin" || spin == "Spin básico") {
+                        spin = "Spin áureo";
+                        cout << '¡' << playerName << ", al obtener a " << standName << ", has aprendido a usar spin áureo!" << endl;
+                        player->setSpin(spin);
+                    }
+                    else {
+                        stand = getSpecificEvolution("Tusk", 3);
+                        cout << '¡' << playerName << ", sin embargo, al tener spin infinito, Tusk evoluciona al ACTO 4!" << endl;
+                    }
+                }
+                else if ((standName == "Tusk ACTO 4" || standName == "Soft & Wet: Go Beyond!") && spin != "Spin infinito") {
+                    spin = "Spin infinito";
+                    cout << '¡' << playerName << ", al obtener a " << standName << ", has aprendido a usar spin infinito!" << endl;
+                    player->setSpin(spin);
+                }
+            }
+            else if (standName == "Ball Breaker") {
+                spin = "Spin infinito";
+                cout << '¡' << playerName << ", al obtener a " << standName << ", has aprendido a usar spin infinito!" << endl;
+                player->setSpin(spin);
             }
             cout << stand.getDescription() << endl << endl;
             delay(10);
