@@ -6,10 +6,10 @@ Stand::Stand() {
     this->name = "";
 }
 
-Stand::Stand(const string& name, const string& description, const int phase) {
+Stand::Stand(const string& name, const string& description, const bool evolves) {
     this->name = name;
     this->description = description;
-    this->phase = phase;
+    this->evolves = evolves;
 }
 
 //Modifiers
@@ -36,6 +36,10 @@ string Stand::getDescription() const {
 
 int Stand::getPhase() const {
     return this->phase;
+}
+
+bool Stand::canEvolve() const {
+    return evolves;
 }
 
 bool Stand::exists() const {
