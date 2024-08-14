@@ -224,7 +224,7 @@ string generateFruitMastery() {
     switch (masteryLvl)
     {
     case 1:
-        return "Basica";
+        return "Básica";
 
     case 2:
         return "Avanzada";
@@ -233,7 +233,7 @@ string generateFruitMastery() {
         return "Despertada";
 
     default:
-        return "Basica";
+        return "Básica";
     }
 }
 
@@ -283,7 +283,7 @@ hakiList generateHakiMastery(hakiList& hList) {
             switch (mastery)
             {
             case 1:
-                hList[i].second = "Basica";
+                hList[i].second = "Básica";
                 break;
 
             case 2:
@@ -299,7 +299,7 @@ hakiList generateHakiMastery(hakiList& hList) {
                 break;
 
             default:
-                hList[i].second = "Basica";
+                hList[i].second = "Básica";
                 break;
             }
         }
