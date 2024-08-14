@@ -14,7 +14,7 @@ string generateFruitMastery();
 
 Stand generateStand();
 
-Stand generateStandEvolution(const string& standName, const string& spinLvl);
+Stand generateStandEvolution(const string& standName);
 
 string generateStrength();
 

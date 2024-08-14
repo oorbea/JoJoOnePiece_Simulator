@@ -242,7 +242,7 @@ Stand generateStand() {
     return standArray[standIndex];
 }
 
-Stand generateStandEvolution(const string& standName, const string& spinLvl) {
+Stand generateStandEvolution(const string& standName) {
     auto evolutions = evolutionMap[standName];
     int standIndex = generateRandomNumber(0, evolutions.size() - 1);
 
