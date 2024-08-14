@@ -75,7 +75,7 @@ int main() {
                 delay(2);
                 cout << "Ahora veamos en qué fase está tu stand" << endl;
                 loadingScreen(generateRandomNumber(1, 2));
-                stand = generateStandEvolution(standName, spin);
+                stand = generateStandEvolution(standName);
                 standName = stand.getName();
                 cout << playerName << ", tu stand es " << standName << endl;
 
