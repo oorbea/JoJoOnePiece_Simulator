@@ -337,9 +337,9 @@ hakiList generateHaki() {
 }
 
 string generateSpin() {
-    int probab = generateRandomNumber(1, 10);
-    if (probab == 1) return "Sin spin";
-    if (probab == 2) return "Spin infinito";
-    if (probab <= 6) return "Spin basico";
-    else return "Spin aureo";
+    int probab = generateRandomNumber(1, 100);
+    if (probab <= 15) return "Sin spin"; //15%
+    if (probab <= 40) return "Spin infinito"; //25%
+    if (probab <= 70) return "Spin basico"; //30%
+    else return "Spin aureo"; //30%
 }
