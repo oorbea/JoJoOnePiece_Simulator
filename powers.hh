@@ -1,5 +1,6 @@
 #ifndef POWERS_HH_
 #define POWERS_HH_
+
 #include "player.hh"
 #include "randomizer.hh"
 #include <map>
@@ -13,6 +14,8 @@ string generateFruitMastery();
 
 Stand generateStand();
 
+Stand generateStandEvolution(const string& standName);
+
 string generateStrength();
 
 hakiList generateHakiMastery(hakiList& hList);
@@ -20,5 +23,7 @@ hakiList generateHakiMastery(hakiList& hList);
 hakiList generateHaki();
 
 string generateSpin();
+
+Stand getSpecificEvolution(const string standName, const int index);
 
 #endif

@@ -3,6 +3,7 @@
 
 #include "fruit.hh"
 #include "stand.hh"
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -45,10 +46,13 @@ public:
 
     string getSpin() const;
 
+    //Print
+    void printStats() const;
+
 private:
     string name;
     Fruit devilFruit;
-    string fruitMastery;
+    string fruitMastery = "";
     Stand standPossessed;
     string baseStrength;
     hakiList haki;

@@ -3,7 +3,7 @@ using namespace std;
 
 //Constructor
 Stand::Stand() {
-    this->name = "";
+    name = "";
 }
 
 Stand::Stand(const string& name, const string& description, const bool evolves) {
@@ -21,21 +21,13 @@ void Stand::setDescription(const string& description) {
     this->description = description;
 }
 
-void Stand::setPhase(const int phase) {
-    this->phase = phase;
-}
-
 //Consultors
 string Stand::getName() const {
-    return this->name;
+    return name;
 }
 
 string Stand::getDescription() const {
-    return this->description;
-}
-
-int Stand::getPhase() const {
-    return this->phase;
+    return description;
 }
 
 bool Stand::canEvolve() const {
@@ -43,5 +35,5 @@ bool Stand::canEvolve() const {
 }
 
 bool Stand::exists() const {
-    return this->name.length() > 0;
+    return name != "Sin stand";
 }

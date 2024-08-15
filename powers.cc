@@ -160,15 +160,12 @@ const vector<Stand> standArray = {
 
     //Parte 7
     Stand("Tusk", "", true),
-    Stand("", ""),
-    Stand("", ""),
-    Stand("", ""),
-    Stand("", ""),
+
 };
 
 map<string, vector<Stand>> evolutionMap;
 
-void stablishEvolutions() { //TODO
+void stablishEvolutions() {
     evolutionMap["Star Platinum"] = {
         Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial."),
         Stand("Star Platinum: The World", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de Jotaro de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.")
@@ -227,7 +224,7 @@ string generateFruitMastery() {
     switch (masteryLvl)
     {
     case 1:
-        return "Basica";
+        return "Básica";
 
     case 2:
         return "Avanzada";
@@ -236,13 +233,20 @@ string generateFruitMastery() {
         return "Despertada";
 
     default:
-        return "Basica";
+        return "Básica";
     }
 }
 
 Stand generateStand() {
     int standIndex = generateRandomNumber(0, standArray.size() - 1);
     return standArray[standIndex];
+}
+
+Stand generateStandEvolution(const string& standName) {
+    auto evolutions = evolutionMap[standName];
+    int standIndex = generateRandomNumber(0, evolutions.size() - 1);
+
+    return evolutions[standIndex];
 }
 
 string generateStrength() {
@@ -256,7 +260,7 @@ string generateStrength() {
         return "Gyojin fuerte";
 
     case 3:
-        return "Capitan de la marina";
+        return "Capitán de la marina";
 
     case 4:
         return "Vice Almirante";
@@ -268,7 +272,7 @@ string generateStrength() {
         return "Yonko+";
 
     default:
-        return "Soldado raso marina";
+        return "Soldado raso de la marina";
     }
 }
 
@@ -279,7 +283,7 @@ hakiList generateHakiMastery(hakiList& hList) {
             switch (mastery)
             {
             case 1:
-                hList[i].second = "Basica";
+                hList[i].second = "Básica";
                 break;
 
             case 2:
@@ -295,7 +299,7 @@ hakiList generateHakiMastery(hakiList& hList) {
                 break;
 
             default:
-                hList[i].second = "Basica";
+                hList[i].second = "Básica";
                 break;
             }
         }
@@ -334,9 +338,13 @@ hakiList generateHaki() {
 }
 
 string generateSpin() {
-    int probab = generateRandomNumber(1, 10);
-    if (probab == 1) return "Sin spin";
-    if (probab == 2) return "Spin infinito";
-    if (probab <= 6) return "Spin basico";
-    else return "Spin aureo";
+    int probab = generateRandomNumber(1, 100);
+    if (probab <= 15) return "Sin spin"; //15%
+    if (probab <= 40) return "Spin infinito"; //25%
+    if (probab <= 70) return "Spin básico"; //30%
+    else return "Spin áureo"; //30%
+}
+
+Stand getSpecificEvolution(const string standName, const int index) {
+    return evolutionMap[standName][index];
 }

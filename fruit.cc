@@ -28,17 +28,17 @@ void Fruit::setType(const string& type) {
 //Consultors
 
 string Fruit::getName() const {
-    return this->name;
+    return name;
 }
 
 string Fruit::getDescription() const {
-    return this->description;
+    return description;
 }
 
 string Fruit::getType() const {
-    return this->type;
+    return type;
 }
 
 bool Fruit::exists() const {
-    return name.length() > 0;
+    return name != "Sin fruta";
 }

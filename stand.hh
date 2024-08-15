@@ -17,14 +17,10 @@ public:
 
     void setDescription(const string& description);
 
-    void setPhase(const int phase);
-
     //Consultors
     string getName() const;
 
     string getDescription() const;
-
-    int getPhase() const;
 
     bool canEvolve() const;
 
@@ -33,7 +29,6 @@ public:
 private:
     string name;
     string description;
-    int phase = 1;
     bool evolves = false;
 };
 
