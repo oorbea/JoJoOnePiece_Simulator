@@ -132,16 +132,16 @@ const vector<Stand> standArray = {
     Stand("Sin stand", "Desafortunadamente no tienes stand"),
 
     //Parte 3
-    Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de Jotaro en combate, permite que Jotaro prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de Jotaro de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.", true),
+    Stand("Star Platinum", "", true),
 
     //Parte 6
     Stand("Stone Free", "A corta distancia y cuando está ensamblado, Stone Free tiene buena fuerza física pudiendo doblar una moneda, pero no es lo suficientemente fuerte como para doblar y romper los barrotes de una celda además de poder desviar las balas cuando sean disparadas en su contra gracias a su velocidad que es equivalente a la de un meteorito extremadamente pequeño y veloz. Además de esta cualidad, Stone Free también cuenta con habilidades integradas al cuerpo de Jolyne, permitiéndole deshacer su cuerpo en la forma de una cuerda extremadamente fina la cual ella puede usar de distintas maneras según la situación."),
     Stand("Kiss", "Kiss puede crear pegatinas cuadradas con símbolos de labios en ellas. Si una pegatina es colocada en un objeto, se creará una copia exacta de este. La pegatina permanecerá pegada ya sea en el objeto original o en la copia. El efecto incluye partes del cuerpo, de forma que si se coloca una pegatina en un brazo, se creará una copia como si fuera una extremidad adicional en el cuerpo del afectado. Ermes también puede colocarse pegatinas sobre sí misma."),
     Stand("Burning Down the House", "Burning Down the House no tiene ninguna manifestación física aparte de una habitación de aspecto normal con un piano, algunos libros, y una gran cantidad de espacio. No tiene personalidad ni puede atacar; sólo sirve como escondite de Emporio."),
     Stand("Foo Fighters", "Permite que los manojos de plancton existan en una forma humanoide. Adopta una personalidad propia. Puede recorrer cuerpos de agua con súper velocidad, producir cuerpos secundarios, desparar extensiones de sí misma, controlar el agua de forma limitada, controlar cuerpos de personas y también puede curar a la gente usando su plancton para coser microscópicamente las heridas rápidamente. Algunas de las heridas más mortales pueden curarse en cuestión de segundos."),
-    Stand("Weather Report", "Weather Report es un stand versátil que posee un control casi completo sobre el clima a escala global. Teniendo control sobre los fenómenos meteorológicos, las habilidades de Weather Report también se extienden a la manipulación del agua, el viento, la electricidad, e incluso el frío, así como otros fenómenos elementales", true),
+    Stand("Weather Report", "", true),
     Stand("Diver Down", "Diver Down puede imprimir cualquier golpe en cualquier superficie y liberar la energía acumulada cuando lo desee. Además, la habilidad principal de Diver Down es sumergirse dentro de objetos sólidos y luego manipular la materia que los compone. Con esta habilidad, Diver Down puede atacar a un enemigo o un objetivo desde su interior, por ejemplo, reorganizando sus huesos y tendones, o defender a un aliado ocultándose dentro de ellos y recibiendo el ataque en su lugar."),
-    Stand("Whitesnake", "La habilidad principal de Whitesnake es transformar una parte o la totalidad de la psique de una persona o su [Stand] (espíritu) en Discos humanamente tangibles. Para ello, Whitesnake debe tocar a su víctima y físicamente extraer el disco de ellos. Estos discos se pueden insertar en otras personas, lo que les permite leer las memorias o utilizar Stands almacenados en el disco. Los discos son permanentes, existentes incluso mucho tiempo después de que Whitesnake deja de existir; la única manera de destruirlos es insertarlos en una persona moribunda, en cuyo caso el disco desaparece.", true),
+    Stand("Whitesnake", "", true),
     Stand("Goo Goo Dolls", "Goo Goo Dolls tiene la habilidad de reducir el tamaño de cualquier persona dentro de su rango. La víctima se reducirá al tamaño de un ratón y el Stand lo atacará si las órdenes de su usuario son desobedecidas."),
     Stand("Manhattan Transfer", "También llamado satélite asesino, Manhattan Transfer es un stand aproximadamente del tamaño de un pequeño pájaro que puede moverse libremente en el aire, es capaz de detectar y analizar el menor movimiento de aire. Si es atacado, intentará escapar del atacante. La habilidad principal de Manhattan Transfer es cambiar la dirección de las balas disparadas por su usuario, permitiendo que este alcance a sus objetivos sea cual sea su posición, haya obstáculos o dificultades en el viento."),
     Stand("Highway To Hell", "Cuando su usuario intenta suicidarse, también puede hacer que alguien muera de la misma manera que él. No importan las circunstancias, cualquier daño que su usuario enfrente terminará ocurriendo a la otra persona de la misma manera. En otras palabras, su usuario debe matarse para matar a su oponente."),
@@ -160,6 +160,10 @@ const vector<Stand> standArray = {
 
     //Parte 7
     Stand("Tusk", "", true),
+    Stand("Ball Breaker", "Ball Breaker encarna la gran cantidad de energía recogida por una esfera de acero cuando la lanzan con spin infinito. Su aplicación principal, por la manipulación de energía, es la aceleración de actividad dentro de las células de un organismo objetivo, llevándolo a un deterioro hasta un punto máximo. Cuando es usado contra un humano, en segundos ellos envejecen drásticamente. El uso de spin infinito de este stand le permite también atravesar dimensiones."),
+    Stand("Oh! Lonesome Me", "El stand le permite a su usuario separar los segmentos de su cuerpos o de los demás y deslizarlos libremente a lo largo de su cuerda. También le otorga un control sobrehumano sobre la cuerda, manipulándola libre y precisamente para agarrar objetos pequeños desde lejos."),
+    Stand("Scary Monsters", "", true),
+    Stand("Cream Starter", "La habilidad principal de Cream Starter es su habilidad para convertir la carne en una sustancia cremosa. El usuario puede rociar una cierta cantidad de carne/crema usando la suya propia, o absorbiendo la carne de un individuo directamente tocándolos."),
 
 };
 
@@ -189,8 +193,8 @@ void stablishEvolutions() {
         Stand("Gold Experience Requiem", "")
     };
     evolutionMap["Weather Report"] = {
-        Stand("Weather Report", ""),
-        Stand("Heavy Weather", "")
+        Stand("Weather Report", "Weather Report es un stand versátil que posee un control casi completo sobre el clima a escala global. Teniendo control sobre los fenómenos meteorológicos, las habilidades de Weather Report también se extienden a la manipulación del agua, el viento, la electricidad, e incluso el frío, así como otros fenómenos elementales."),
+        Stand("Heavy Weather", "Weather Report es un stand versátil que posee un control casi completo sobre el clima a escala global. Teniendo control sobre los fenómenos meteorológicos, las habilidades de Weather Report también se extienden a la manipulación del agua, el viento, la electricidad, e incluso el frío, así como otros fenómenos elementales. Además, este genera multitud de arcoíris por todas partes que convertirán en un caracol a quién los toque, siendo este efecto contagioso para los que toquen a los caracoles también.")
     };
     evolutionMap["Whitesnake"] = {
         Stand("Whitesnake", "La habilidad principal de Whitesnake es transformar una parte o la totalidad de la psique de una persona o su [Stand] (espíritu) en Discos humanamente tangibles. Para ello, Whitesnake debe tocar a su víctima y físicamente extraer el disco de ellos. Estos discos se pueden insertar en otras personas, lo que les permite leer las memorias o utilizar Stands almacenados en el disco. Los discos son permanentes, existentes incluso mucho tiempo después de que Whitesnake deja de existir; la única manera de destruirlos es insertarlos en una persona moribunda, en cuyo caso el disco desaparece."),
@@ -198,10 +202,14 @@ void stablishEvolutions() {
         Stand("Made In Heaven", "Permite a su usuario moverse a velocidad infinita tras acelerar por un breve periodo de tiempo. Además de poder acelerar el transcurso del tiempo hasta llegar al punto de reiniciar el universo.")
     };
     evolutionMap["Tusk"] = {
-        Stand("Tusk ACTO 1", ""),
-        Stand("Tusk ACTO 2", ""),
-        Stand("Tusk ACTO 3", ""),
-        Stand("Tusk ACTO 4", "")
+        Stand("Tusk ACTO 1", "Tusk ACTO 1 le da a su usuario la capacidad de usar spin sobre sus uñas, haciendo que roten a una gran velocidad y pudiendo lanzarlas como si de proyectiles se tratasen. Su potencia y precisión son mayores a los de una bala normal, hasta el punto de poder tallar un árbol y darle forma humanoide en pocos segundos."),
+        Stand("Tusk ACTO 2", "Tusk ACTO 2 aumenta considerablemente la potencia y el rango de los disparos. Además de esto, los agujeros creados por las uñas bala son capaces de moverse sobre la superficie donde impactaron y las superficies que están en contacto con esta, dejando un rastro por donde se mueven. Estos agujeros perseguirán a cualquier persona u objeto que su usuario quiera, y una vez alcancen a su objetivo, o ya no puedan seguir moviéndose, dañaran la zona donde se encuentren."),
+        Stand("Tusk ACTO 3", "Tusk ACTO 3 le da la capacidad al usuario de succionar partes de su cuerpo al lugar donde la espiral de spin rota; el punto más pequeño posible. Para esto, este tiene que dispararse a sí mismo con sus uñas balas con Proporción Áurea. El usuario es capaz de combinar esto con la habilidad de agujeros móviles de ACTO 2, permitiéndole mover, por ejemplo, su mano a zonas lejanas o mejor posicionadas para alcanzar sus objetivos. Así, el usuario puede disparar sus uñas desde diferentes direcciones. También puede usar esta capacidad para ocultar y resguardar partes de su cuerpo, como la mitad del mismo."),
+        Stand("Tusk ACTO 4", "Tusk ACTO 4, además de poseer gran poder físico, le da la capacidad al usuario de disparar uñas con spin infinito que causan daño eternamente al objetivo. Además el stand es inmune a cambios espacio-temporales como cambios de dimensión o control del tiempo. También puede abrir portales espacio-temporales y moverse libremente a través de ellos.")
+    };
+    evolutionMap["Scary Monsters"] = {
+        Stand("Scary Monsters del Dr. Ferdinand", "Scary Monsters demuestra la habilidad de infectar a otros seres vivos con un virus que los transforma en dinosaurios y los hace caer bajo las órdenes directas del usuario. Cada persona o animal infectado tiene un aspecto y Habilidades diferentes, así como la habilidad de infectar a otros con el virus mordiéndolos o rasgándolos. El Stand parece no tener límites en términos de rango o número de individuos infectados. Sin embargo, si el usuario se lesiona gravemente, sus poderes desaparecerán y todos los dinosaurios volverán a su forma original."),
+        Stand("Scary Monsters de Dio", "El usuario es capaz de cambiar su propio cuerpo en un dinosaurio, ya sea completamente o como un híbrido de los dos. Mientras que se transforma, él ha aumentado la resistencia, la fuerza, la velocidad y la visión, junto con la habilidad de comer cualquier cosa. sobrepasa con mucho los límites humanos y le permite tocar stands.")
     };
     evolutionMap["Dirty Deeds Done Dirt Cheap"] = {
         Stand("Dirty Deeds Done Dirt Cheap", ""),
