@@ -218,22 +218,22 @@ void stablishEvolutions() {
         Stand("Star Platinum: The World", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de su usuario en combate, permite que su usuario prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de su usuario de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.")
     };
     evolutionMap["Silver Chariot"] = {
-        Stand("Silver Chariot", ""),
-        Stand("Chariot Requiem", "")
+        Stand("Silver Chariot", "Silver Chariot es un poderoso Stand, dedicado a la batalla. Todos sus poderes son destructivos en la naturaleza o ayudan al Stand en batalla. Es un Stand muy ágil, capaz de atacar a los enemigos con bombardeo de tajos de espada y estocadas antes que el oponente pueda reaccionar. También puede utilizar esta agilidad, junto con su espada, para defender y desviar los ataques dirigidos a el o a su usuario."),
+        Stand("Chariot Requiem", "Tras la activación, Chariot Réquiem pone a todos los seres vivos en una gran área en un sueño vigoroso. A continuación, cambia el alma de un organismo con el del cuerpo más cercano, independientemente de la especie. Si un cuerpo muere físicamente, el alma que lo habita morirá también.")
     };
     evolutionMap["Echoes"] = {
-        Stand("Huevo", ""),
-        Stand("Echoes ACTO 1", ""),
-        Stand("Echoes ACTO 2", ""),
-        Stand("Echoes ACTO 3", "")
+        Stand("Huevo", "Este stand no hace nada, ni siquiera puedes moverlo."),
+        Stand("Echoes ACTO 1", "El stand puede escribir un efecto de sonido en katakana sobre cualquier cosa, desde carne humana hasta el suelo, y hacer que el sonido se repita una y otra vez con un volumen cada vez más elevado. Echoes puede disparar efectos de sonido tanto desde su cola como de sus manos."),
+        Stand("Echoes ACTO 2", "Echoes puede escribir un efecto de sonido en cualquier superficie. Sin embargo, sólo es capaz de disparar efectos de sonido desde su cola, lo que lo limita a un solo efecto de sonido a la vez. Cuando se toca el efecto de sonido, se produce un efecto relacionado con el sonido."),
+        Stand("Echoes ACTO 3", "Puede golpear rápidamente su objetivo antes de atribuir un efecto de congelación o de detención aumentando considerablemente su peso efectivo. Sólo puede afectar a un objetivo a la vez.")
     };
     evolutionMap["Killer Queen"] = {
-        Stand("Killer Queen", ""),
-        Stand("Killer Queen: Bites the Dust", "")
+        Stand("Killer Queen", "Con sus manos, Killer Queen convierte cualquier cosa que toque en una bomba y puede detonarla cuando quiera. Además, tiene a Sheer Heart Attack, un pequeño stand automático indestructible que explota las veces que sean necesarias cuando llega a su objetivo al cual rastrea por el calor."),
+        Stand("Killer Queen: Bites the Dust", "Con sus manos, Killer Queen convierte cualquier cosa que toque en una bomba y puede detonarla cuando quiera. Además, tiene a Sheer Heart Attack, un pequeño stand automático indestructible que explota las veces que sean necesarias cuando llega a su objetivo al cual rastrea por el calor. Con Bites the Dust, el usuario puede decidir un objetivo que funcionará como interruptor al decir o escribir cierta palabra. Cuando esta bomba explote, el usuario viajará una hora o un día atrás en el tiempo.")
     };
     evolutionMap["Gold Experience"] = {
-        Stand("Gold Experience", ""),
-        Stand("Gold Experience Requiem", "")
+        Stand("Gold Experience", "Gold Experience puede generar una cantidad aparentemente infinita de energía vital y dotar de esa energía a cualquier cosa que toque con sus puños. Esta habilidad se traduce en una gran variedad de efectos. Puede crear vida a partir de objetos, curar a seres vivos, distorsionar la percepción de su objetivo y tiene un sensor de vida."),
+        Stand("Gold Experience Requiem", "Gold Experience Requiem cuenta con un increíble incremento en velocidad y potencia a comparación de su forma anterior. Sin embargo su habilidad más poderosa reside en la capacidad de revertir las acciones del oponente a su punto inicial, anulando toda acción dirigida en su contra. Además, puede proyectar a modo de láser objetos pequeños y sigue pudiendo crear vida a partir de materia.")
     };
     evolutionMap["Weather Report"] = {
         Stand("Weather Report", "Weather Report es un stand versátil que posee un control casi completo sobre el clima a escala global. Teniendo control sobre los fenómenos meteorológicos, las habilidades de Weather Report también se extienden a la manipulación del agua, el viento, la electricidad, e incluso el frío, así como otros fenómenos elementales."),
