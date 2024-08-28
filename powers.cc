@@ -134,8 +134,8 @@ const vector<Stand> standArray = {
     //Parte 3
     Stand("Star Platinum", "", true),
     Stand("Silver Chariot", "", true),
-    Stand("Magician's Red", "Magician's Red es un Stand humanoide de rango-medio; su capacidad única es la generación y manipulación del fuego. Avdol prefiere los espacios abiertos con el fin de utilizar su poder de forma más completa."),
-    Stand("Hermit Purple", "Las habilidades físicas de Hermit Purple son relativamente débiles, pero proporcionan a Joseph con una considerable habilidad de adivinación, permitiéndole divinizar y materializar cualquier tipo de información como una imagen, un lugar o incluso pensamientos."),
+    Stand("Magician's Red", "Magician's Red es un Stand humanoide de rango-medio; su capacidad única es la generación y manipulación del fuego."),
+    Stand("Hermit Purple", "Las habilidades físicas de Hermit Purple son relativamente débiles, pero proporcionan a su usuario con una considerable habilidad de adivinación, permitiéndole divinizar y materializar cualquier tipo de información como una imagen, un lugar o incluso pensamientos."),
     Stand("Hierophant Green", "Control de Marioneta. Tentáculos: Hierophant Green. Cuerpo en Espiral: Hierophant Green. Emerald Splash"),
     Stand("The Fool", "Manipulación de arena. Cambio de forma."),
     Stand("Holy's Stand", ""),
@@ -170,11 +170,11 @@ const vector<Stand> standArray = {
 
 
     //Parte 4
-    Stand("Crazy Diamond", ""),
-    Stand("The Hand", ""),
+    Stand("Crazy Diamond", "Crazy Diamond tiene la habilidad de remoldear la materia. Siempre y cuando toque una parte del objeto, Crazy Diamond es capaz de restaurarlo al estado que su usuario desee."),
+    Stand("The Hand", "Cuando The Hand usa su mano derecha, puede borrar todo lo que entre en contacto con la palma cuando hace un movimiento de deslizamiento con su brazo. Todo lo que esté dentro de su rango de acción, se borra de este universo, ya se trate de objetos físicos o el espacio en sí."),
     Stand("Echoes", "", true),
-    Stand("Heaven's Door", ""),
-    Stand("Aqua Necklace", ""),
+    Stand("Heaven's Door", "Heaven's Door convierte al individuo afectado en un gigantesco libro el cual queda expuesto por completo dependiendo de donde sea abierto con la piel completamente descamada y segmentada en páginas que cuentan la historia de su vida. Todo lo que se escriba dentro se cumplirá siempre."),
+    Stand("Aqua Necklace", "Aqua Necklace puede disfrazarse de cualquier clase de líquido y poseer a la gente desde el interior para controlarlos entrando fácilmente en el cuerpo a través de la boca de su víctima."),
     Stand("Bad Company", ""),
     Stand("Red Hot Chili Pepper", ""),
     Stand("The Lock", ""),
@@ -304,8 +304,8 @@ map<string, vector<Stand>> evolutionMap;
 
 void stablishEvolutions() {
     evolutionMap["Star Platinum"] = {
-        Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de su usuario en combate, permite que su usuario prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial."),
-        Stand("Star Platinum: The World", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica, salvo el alcance, junto con la habilidad de su usuario en combate, permite que su usuario prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial. Además, el descubrimiento de su usuario de su capacidad para detener el tiempo solo lo hizo aún más formidable en el combate.")
+        Stand("Star Platinum", "Es uno de los Stands más poderosos de la serie. Su abrumadora destreza física en cada característica básica salvo el alcance, permite que su usuario prevalezca repetidamente contra muchos usuarios de Stand incluso sin el uso de ninguna habilidad especial."),
+        Stand("Star Platinum: The World", "Es uno de los Stands más poderosos de la serie. Tiene abrumadora destreza física en cada característica básica, salvo el alcance. Además, puede detener el tiempo.")
     };
     evolutionMap["Silver Chariot"] = {
         Stand("Silver Chariot", "Silver Chariot es un poderoso Stand, dedicado a la batalla. Todos sus poderes son destructivos en la naturaleza o ayudan al Stand en batalla. Es un Stand muy ágil, capaz de atacar a los enemigos con bombardeo de tajos de espada y estocadas antes que el oponente pueda reaccionar. También puede utilizar esta agilidad, junto con su espada, para defender y desviar los ataques dirigidos a el o a su usuario."),
